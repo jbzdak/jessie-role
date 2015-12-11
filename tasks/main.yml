@@ -1,0 +1,13 @@
+---
+- name: delete sources list
+  file: name=/etc/apt/sources.list state=absent
+  notify: update apt
+- name: upload stable
+  template: src=stable.list dest=/etc/apt/sources.list.d/stable.list
+  notify: update apt
+- name: upload stable
+  template: src=testing.list dest=/etc/apt/sources.list.d/testing.list
+  notify: update apt
+- name: upload preferences
+  template: src=99AptPreferences dest=/etc/apt/apt.conf.d/99AptPreferences
+  notify: update apt

@@ -1,0 +1,7 @@
+---
+# defaults file for jessie-role
+debian_distros:
+  stable: jessie
+  testing: stretch
+  areas: main
+  mirror: http://ftp.de.debian.org/debian/
