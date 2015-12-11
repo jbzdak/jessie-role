@@ -22,15 +22,15 @@ galaxy_info:
   company: your company (optional)
   license: BSD
   min_ansible_version: 1.9.3
-
-  - name: Debian
-    versions:
-    - all
-    - etch
-    - jessie
-    - lenny
-    - squeeze
-    - wheezy
+  platforms:
+    - name: Debian
+      versions:
+      - all
+      - etch
+      - jessie
+      - lenny
+      - squeeze
+      - wheezy
 
 
   categories:
