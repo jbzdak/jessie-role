@@ -1,5 +1,8 @@
-Role Name
-=========
+Jessie Role
+===========
+
+Description
+-----------
 
 A simple role that updates sources list for debian so, packages are installed 
 from stable distribution, while one can install single packages from 
